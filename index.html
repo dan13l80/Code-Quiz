@@ -4,47 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
 <body>
-    <script src="assets/js/script.js"></script>
     <header>
-        <p class="high-scores">View high scores</p>
-        <p class="time">Time: <span class="timer"> 0 </span></p>
+        <button type="button" id="view-high-score" name="view-high-score">View high scores</button>
+        <p>Time: <span id="countdown">75</span></p>
     </header>
-    <main class="page-content">
-       
-        <!-- Quiz intro Section -->
-        <div class="intro">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit.
-                <br><b>Note:</b> Incorrect answers will penalize your score/time by ten seconds!
-            </p>
-            <button type="button" class="start-button btn btn-primary btn-lg">Start Quiz</button>
-        </div>
 
-        <!-- Main Quiz Section -->
-        <div class="quiz">
-            <div class="quiz-wrapper">
-                <h2 class="question"> </h2>
-                <ul class="options"> </ul>
-            </div>
-            <form class="initials-form"></form>
-            <p class="answer"></p>
+    <!-- Front Page -->
+    <main id="quiz-content">
+        <h1 id="main-title">Coding Quiz Challenge</h1>
+        <p id="main-intro">Welcome! Please answer the following questions before the
+            time limit reaches zero. If the timer ends before you finish 
+            all of the questions, the test will end. Hit 'Begin Quiz' when 
+            you're ready.
+        </p>
+        <div id="main-button">
+            <button type="button" id="begin-btn" class="begin-quiz">Begin Quiz</button>
         </div>
-
-        <!-- Scorecard Section-->
-        <div class="view-score">
-            <h2 class="score-title"></h2>
-            <ul class="score-list"></ul>
-        </div>
-        <div class="buttons">
-        </div>
-
-
     </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
